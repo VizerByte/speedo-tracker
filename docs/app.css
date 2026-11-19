@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; font-family: system-ui, -apple-system, Segoe UI, sans-serif; background: #0e1520; color: #e8eef7; }
+#layout { display: flex; height: 100%; }
+#panel { width: 340px; min-width: 340px; background: #121b29; border-right: 1px solid #25344a; display: flex; flex-direction: column; overflow-y: auto; }
+#panel header { padding: 20px; border-bottom: 1px solid #25344a; }
+h1 { margin: 0; font-size: 22px; letter-spacing: .3px; }
+#route-select { width: 100%; margin-top: 12px; padding: 8px; border-radius: 8px; border: 1px solid #25344a; background: #1a2637; color: #e8eef7; font-size: 13px; }
+#route-name { margin: 6px 0 12px; color: #9fb2cc; font-size: 13px; }
+.status { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #9fb2cc; }
+#dot { width: 8px; height: 8px; border-radius: 50%; background: #f0a020; }
+#dot.live { background: #35d07f; box-shadow: 0 0 8px #35d07f; }
+section { padding: 16px 20px; border-bottom: 1px solid #25344a; }
+h2 { margin: 0 0 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; color: #7f93ad; }
+.card { padding: 10px 12px; border-radius: 8px; background: #1a2637; margin-bottom: 8px; font-size: 13px; }
+.card .title { font-weight: 600; }
+.card .meta { color: #9fb2cc; font-size: 11px; margin-top: 3px; }
+.card .eta { float: right; color: #6ee7a8; font-weight: 700; }
+.badge { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 10px; background: #2c3d55; color: #b8c8de; margin-left: 6px; }
+.badge.sim { background: #4a3a1a; color: #ffc86b; }
+#panel footer { margin-top: auto; padding: 16px 20px; display: flex; justify-content: space-between; font-size: 11px; color: #7f93ad; }
+#panel footer a { color: #6ea8ff; }
+#map { flex: 1; height: 100%; background: #0e1520; }
+.bus-marker { background: #ff5fa2; border: 2px solid #fff; border-radius: 8px; color: #111; font: 700 10px system-ui, sans-serif; padding: 2px 5px; white-space: nowrap; box-shadow: 0 2px 8px #0008; }
+.bus-marker.sim { background: #ffc86b; }
+.stop-marker { background: #e8eef7; border: 2px solid #121b29; border-radius: 50%; width: 8px; height: 8px; }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1a2637; color: #e8eef7; }
+.leaflet-container { font-family: system-ui, sans-serif; }
+@media (max-width: 700px) { #layout { flex-direction: column-reverse; } #panel { width: 100%; min-width: 0; height: 45%; } }

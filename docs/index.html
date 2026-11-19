@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speedo Live Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="layout">
+    <aside id="panel">
+      <header>
+        <h1>Speedo Live</h1>
+        <select id="route-select" aria-label="Select route"></select>
+        <p id="route-name">Loading route…</p>
+        <div class="status"><span id="dot"></span><span id="status-text">Connecting…</span></div>
+      </header>
+      <section>
+        <h2>Live buses</h2>
+        <div id="bus-list"></div>
+      </section>
+      <section>
+        <h2>Next arrivals</h2>
+        <div id="eta-list"></div>
+      </section>
+      <footer>
+        <a href="driver.html">Driver GPS page</a>
+        <span id="updated">—</span>
+      </footer>
+    </aside>
+    <main id="map"></main>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

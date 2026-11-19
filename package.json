@@ -1,0 +1,9 @@
+{
+  "name": "speedo-tracker-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Real-time Speedo bus tracker prototype",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

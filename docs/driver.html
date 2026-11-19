@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driver GPS · Speedo Live</title>
+  <link rel="stylesheet" href="app.css">
+  <style>
+    body { padding: 24px; }
+    .box { max-width: 480px; margin: 0 auto; }
+    input, button { width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: 1px solid #25344a; background: #1a2637; color: #e8eef7; font-size: 15px; }
+    button { background: #ff5fa2; border: 0; color: #111; font-weight: 700; cursor: pointer; }
+    button.stop { background: #3a4a61; color: #e8eef7; }
+    #log { font-family: ui-monospace, monospace; font-size: 12px; color: #9fb2cc; white-space: pre-wrap; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Driver GPS</h1>
+    <p id="route-name" style="color:#9fb2cc;font-size:13px"></p>
+    <select id="route-select" aria-label="Select route"></select>
+    <input id="bus-id" placeholder="Bus ID (e.g. RT20-01)" autocomplete="off">
+    <input id="token" placeholder="Sharing token (if required)" autocomplete="off" type="password">
+    <button id="start">Start sharing location</button>
+    <button id="stop" class="stop" disabled>Stop sharing</button>
+    <div id="log">Ready.</div>
+  </div>
+  <script src="config.js"></script>
+  <script src="driver.js"></script>
+</body>
+</html>
